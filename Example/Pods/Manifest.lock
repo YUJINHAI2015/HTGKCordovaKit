@@ -1,0 +1,16 @@
+PODS:
+  - HTGKCordovaKit (0.1.0)
+
+DEPENDENCIES:
+  - HTGKCordovaKit (from `../`)
+
+EXTERNAL SOURCES:
+  HTGKCordovaKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HTGKCordovaKit: bf48a24e3377bb189a2619c5958ca9666a2c64fd
+
+PODFILE CHECKSUM: 6ba02113376931b75f73364eafb125b2fc148b40
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,6 @@
+framework module Pods_HTGKCordovaKit_Example {
+  umbrella header "Pods-HTGKCordovaKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

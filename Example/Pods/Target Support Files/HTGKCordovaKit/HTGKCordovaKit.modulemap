@@ -1,0 +1,6 @@
+framework module HTGKCordovaKit {
+  umbrella header "HTGKCordovaKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

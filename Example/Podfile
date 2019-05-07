@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HTGKCordovaKit_Example' do
+  pod 'HTGKCordovaKit', :path => '../'
+
+  target 'HTGKCordovaKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
