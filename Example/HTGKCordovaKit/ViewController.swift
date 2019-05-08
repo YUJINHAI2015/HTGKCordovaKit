@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        super.viewDidLoad()        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBAction func loadWebViewAction(_ sender: UIButton) {
+        let myWebVC = MyWebViewController.init(configuration: nil)
+        self.navigationController?.pushViewController(myWebVC, animated: true)
     }
-
+    
 }
 

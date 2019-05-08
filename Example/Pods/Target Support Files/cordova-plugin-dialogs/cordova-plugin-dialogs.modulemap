@@ -1,0 +1,6 @@
+framework module cordova_plugin_dialogs {
+  umbrella header "cordova-plugin-dialogs-umbrella.h"
+
+  export *
+  module * { export * }
+}

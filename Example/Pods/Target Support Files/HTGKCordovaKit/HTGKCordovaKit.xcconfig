@@ -1,5 +1,7 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/HTGKCordovaKit
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Cordova" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-camera" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-contacts" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device-motion" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device-orientation" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-dialogs" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-file" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-file-transfer" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-geolocation" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-globalization" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-inappbrowser" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-network-information" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-vibration" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-wkwebview-engine"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+OTHER_LDFLAGS = $(inherited) -weak_framework "AudioToolbox" -weak_framework "ImageIO"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

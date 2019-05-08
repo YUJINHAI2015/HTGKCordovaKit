@@ -153,10 +153,40 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Cordova/Cordova.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HTGKCordovaKit/HTGKCordovaKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-camera/cordova_plugin_camera.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-contacts/cordova_plugin_contacts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-device/cordova_plugin_device.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-device-motion/cordova_plugin_device_motion.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-device-orientation/cordova_plugin_device_orientation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-dialogs/cordova_plugin_dialogs.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-file/cordova_plugin_file.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-file-transfer/cordova_plugin_file_transfer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-geolocation/cordova_plugin_geolocation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-globalization/cordova_plugin_globalization.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-inappbrowser/cordova_plugin_inappbrowser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-network-information/cordova_plugin_network_information.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-vibration/cordova_plugin_vibration.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-wkwebview-engine/cordova_plugin_wkwebview_engine.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Cordova/Cordova.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HTGKCordovaKit/HTGKCordovaKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-camera/cordova_plugin_camera.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-contacts/cordova_plugin_contacts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-device/cordova_plugin_device.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-device-motion/cordova_plugin_device_motion.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-device-orientation/cordova_plugin_device_orientation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-dialogs/cordova_plugin_dialogs.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-file/cordova_plugin_file.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-file-transfer/cordova_plugin_file_transfer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-geolocation/cordova_plugin_geolocation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-globalization/cordova_plugin_globalization.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-inappbrowser/cordova_plugin_inappbrowser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-network-information/cordova_plugin_network_information.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-vibration/cordova_plugin_vibration.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-wkwebview-engine/cordova_plugin_wkwebview_engine.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

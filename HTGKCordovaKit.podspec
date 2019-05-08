@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTGKCordovaKit'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'This description is used to generate tags and improve search results'
 
 # This description is used to generate tags and improve search results.
@@ -43,4 +43,25 @@ DESC
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+    s.dependency 'Cordova', '~>4.5.4'
+    # cordova 插件
+    #  s.dependency 'CordovaPlugin-battery-status', '~>0.2.10'
+    #  s.dependency 'CordovaPlugin-media', '~>0.2.4'
+    s.dependency 'cordova-plugin-camera', '~>2.3.0'
+    s.dependency 'cordova-plugin-contacts', '~>2.2.0'
+    s.dependency 'cordova-plugin-device', '~>1.1.3'
+    s.dependency 'cordova-plugin-device-motion', '~>1.2.2'
+    s.dependency 'cordova-plugin-device-orientation', '~>1.0.4'
+    s.dependency 'cordova-plugin-dialogs', '~>1.2.0'
+    s.dependency 'cordova-plugin-file', '~>4.3.0'
+    s.dependency 'cordova-plugin-file-transfer', '~>1.6.0'
+    s.dependency 'cordova-plugin-geolocation', '~>2.4.0'
+    s.dependency 'cordova-plugin-globalization', '~>1.0.4'
+    s.dependency 'cordova-plugin-inappbrowser', '~>1.5.0'
+    s.dependency 'cordova-plugin-network-information', '~>1.3.0'
+    s.dependency 'cordova-plugin-vibration', '~>2.1.2'
+    s.dependency 'cordova-plugin-wkwebview-engine', '~>1.1.0'
+
+
 end

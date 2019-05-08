@@ -1,15 +1,93 @@
 PODS:
-  - HTGKCordovaKit (0.1.0)
+  - Cordova (4.5.4)
+  - cordova-plugin-camera (2.3.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-contacts (2.2.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-device (1.1.3):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-device-motion (1.2.2):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-device-orientation (1.0.4):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-dialogs (1.2.0):
+    - Cordova (>= 4.0.0)
+  - cordova-plugin-file (4.3.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-file-transfer (1.6.0):
+    - Cordova (>= 4.3.0)
+    - cordova-plugin-file
+  - cordova-plugin-geolocation (2.4.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-globalization (1.0.4):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-inappbrowser (1.5.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-network-information (1.3.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-vibration (2.1.2):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-wkwebview-engine (1.1.0):
+    - Cordova (>= 4.3.0)
+  - HTGKCordovaKit (0.1.0):
+    - Cordova (~> 4.5.4)
+    - cordova-plugin-camera (~> 2.3.0)
+    - cordova-plugin-contacts (~> 2.2.0)
+    - cordova-plugin-device (~> 1.1.3)
+    - cordova-plugin-device-motion (~> 1.2.2)
+    - cordova-plugin-device-orientation (~> 1.0.4)
+    - cordova-plugin-dialogs (~> 1.2.0)
+    - cordova-plugin-file (~> 4.3.0)
+    - cordova-plugin-file-transfer (~> 1.6.0)
+    - cordova-plugin-geolocation (~> 2.4.0)
+    - cordova-plugin-globalization (~> 1.0.4)
+    - cordova-plugin-inappbrowser (~> 1.5.0)
+    - cordova-plugin-network-information (~> 1.3.0)
+    - cordova-plugin-vibration (~> 2.1.2)
+    - cordova-plugin-wkwebview-engine (~> 1.1.0)
 
 DEPENDENCIES:
   - HTGKCordovaKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cordova
+    - cordova-plugin-camera
+    - cordova-plugin-contacts
+    - cordova-plugin-device
+    - cordova-plugin-device-motion
+    - cordova-plugin-device-orientation
+    - cordova-plugin-dialogs
+    - cordova-plugin-file
+    - cordova-plugin-file-transfer
+    - cordova-plugin-geolocation
+    - cordova-plugin-globalization
+    - cordova-plugin-inappbrowser
+    - cordova-plugin-network-information
+    - cordova-plugin-vibration
+    - cordova-plugin-wkwebview-engine
 
 EXTERNAL SOURCES:
   HTGKCordovaKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HTGKCordovaKit: bf48a24e3377bb189a2619c5958ca9666a2c64fd
+  Cordova: 90a337977b8667a80483f559268c82062b1183da
+  cordova-plugin-camera: f14580de3a57553b9e1e133fe2963216b2a444eb
+  cordova-plugin-contacts: 0f5f663a3a0a884247910f745025a2364deaaff4
+  cordova-plugin-device: a8d085e5d9d10712c537e3ef3c8c3e49a35c6a90
+  cordova-plugin-device-motion: 887a56d2ba37f86d0c7eba9c6ceba8f19a6bcc2c
+  cordova-plugin-device-orientation: a245e37b974e926265b21d07c7bdfd64d453b8ef
+  cordova-plugin-dialogs: 0cb051ffb3ea725702098992c7358d13946328da
+  cordova-plugin-file: 4458961f1158dbbc2502f70e8945ea252aa9ed2b
+  cordova-plugin-file-transfer: fd65c80d5b29ad73bf0b2a50761455a6f9049141
+  cordova-plugin-geolocation: dc6dbcfcef654312bbf50b87045ccf1f07efcd28
+  cordova-plugin-globalization: 1ac9a8fa27214550b775bc70b4b919dfd3e66e76
+  cordova-plugin-inappbrowser: 524780743ddeaa363d9f70b5e4700d55efde3dd4
+  cordova-plugin-network-information: 89f1639b86374336ffac71f45e8913d493e9fc9e
+  cordova-plugin-vibration: ba02ccf635f9ac6f394a45aa07cda015c0a1f114
+  cordova-plugin-wkwebview-engine: 38ccefc374b68251e8a0675fec57477dfd18da15
+  HTGKCordovaKit: f4fdf436b2e57de9208dee98eb398f7225f54a77
 
 PODFILE CHECKSUM: 6ba02113376931b75f73364eafb125b2fc148b40
 
