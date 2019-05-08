@@ -2971,6 +2971,38 @@
 			};
 			name = Debug;
 		};
+		22B35CD99B74EBC5ABCC3249FA5222C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7D11CEA9C5F4FFFF5C9994BE8F6877 /* HTGKCordovaKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit.modulemap";
+				PRODUCT_MODULE_NAME = HTGKCordovaKit;
+				PRODUCT_NAME = HTGKCordovaKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		339D726EF14D4FE84C5C5F6C170870EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4EED2EC7331774041BA448ACF5A5103 /* cordova-plugin-dialogs.xcconfig */;
@@ -3149,69 +3181,6 @@
 				MODULEMAP_FILE = "Target Support Files/cordova-plugin-network-information/cordova-plugin-network-information.modulemap";
 				PRODUCT_MODULE_NAME = cordova_plugin_network_information;
 				PRODUCT_NAME = cordova_plugin_network_information;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		52B8333FF71528BDCD4CCD3854470CD5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED7D11CEA9C5F4FFFF5C9994BE8F6877 /* HTGKCordovaKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit.modulemap";
-				PRODUCT_MODULE_NAME = HTGKCordovaKit;
-				PRODUCT_NAME = HTGKCordovaKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		56144E67A06C1BCB8B648333034BC6CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED7D11CEA9C5F4FFFF5C9994BE8F6877 /* HTGKCordovaKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit.modulemap";
-				PRODUCT_MODULE_NAME = HTGKCordovaKit;
-				PRODUCT_NAME = HTGKCordovaKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -3414,6 +3383,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		9464864BF0CF7425192A50AAB0D1A7B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7D11CEA9C5F4FFFF5C9994BE8F6877 /* HTGKCordovaKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HTGKCordovaKit/HTGKCordovaKit.modulemap";
+				PRODUCT_MODULE_NAME = HTGKCordovaKit;
+				PRODUCT_NAME = HTGKCordovaKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		9503C2506357D6A68E740C5353CC55B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -4208,8 +4208,8 @@
 		82274CD9BA68354B488A17206E9E3A07 /* Build configuration list for PBXNativeTarget "HTGKCordovaKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56144E67A06C1BCB8B648333034BC6CF /* Debug */,
-				52B8333FF71528BDCD4CCD3854470CD5 /* Release */,
+				9464864BF0CF7425192A50AAB0D1A7B7 /* Debug */,
+				22B35CD99B74EBC5ABCC3249FA5222C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

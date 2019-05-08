@@ -1,6 +1,6 @@
 {
   "name": "HTGKCordovaKit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "This description is used to generate tags and improve search results",
   "description": "This description is used to generate tags and improve search results.\nThis description is used to generate tags and improve search results.\nThis description is used to generate tags and improve search results.",
   "homepage": "https://github.com/YUJINHAI2015/HTGKCordovaKit",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/YUJINHAI2015/HTGKCordovaKit.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "HTGKCordovaKit/Classes/**/*",
   "swift_version": "5.0",

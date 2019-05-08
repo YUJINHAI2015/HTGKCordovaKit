@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTGKCordovaKit'
-  s.version          = '0.2.0'
-  s.summary          = 'This description is used to generate tags and improve search results'
+  s.version          = '0.3.0'
+  s.summary          = 'HTGKCordovaKit is a basic framework for Cordova.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,9 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This description is used to generate tags and improve search results.
-This description is used to generate tags and improve search results.
-This description is used to generate tags and improve search results.
+HTGKCordovaKit 只是封装了Cordova最基础的功能，集成了Cordova官网提供的基础插件。
+使用的是WKWebView框架，最低版本支持iOS9.0
 DESC
 
   s.homepage         = 'https://github.com/YUJINHAI2015/HTGKCordovaKit'
@@ -30,7 +29,8 @@ DESC
   s.source           = { :git => 'https://github.com/YUJINHAI2015/HTGKCordovaKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  # 只能兼容9.0
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'HTGKCordovaKit/Classes/**/*'
 
