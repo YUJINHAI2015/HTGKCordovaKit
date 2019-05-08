@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTGKCordovaKit'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'HTGKCordovaKit is a basic framework for Cordova.'
 
 # This description is used to generate tags and improve search results.
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 HTGKCordovaKit 只是封装了Cordova最基础的功能，集成了Cordova官网提供的基础插件。
-使用的是WKWebView框架，最低版本支持iOS9.0
+使用的是WKWebView框架，最低版本支持iOS10.0
 DESC
 
   s.homepage         = 'https://github.com/YUJINHAI2015/HTGKCordovaKit'
@@ -29,8 +29,8 @@ DESC
   s.source           = { :git => 'https://github.com/YUJINHAI2015/HTGKCordovaKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  # 只能兼容9.0
-  s.ios.deployment_target = '9.0'
+  # 最新版本的Cordova只能兼容10.0
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'HTGKCordovaKit/Classes/**/*'
 
@@ -44,24 +44,41 @@ DESC
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-    s.dependency 'Cordova', '~>4.5.4'
+    s.dependency 'Cordova'
+#, '~>4.5.4'
     # cordova 插件
-    #  s.dependency 'CordovaPlugin-battery-status', '~>0.2.10'
-    #  s.dependency 'CordovaPlugin-media', '~>0.2.4'
-    s.dependency 'cordova-plugin-camera', '~>2.3.0'
-    s.dependency 'cordova-plugin-contacts', '~>2.2.0'
-    s.dependency 'cordova-plugin-device', '~>1.1.3'
-    s.dependency 'cordova-plugin-device-motion', '~>1.2.2'
-    s.dependency 'cordova-plugin-device-orientation', '~>1.0.4'
-    s.dependency 'cordova-plugin-dialogs', '~>1.2.0'
-    s.dependency 'cordova-plugin-file', '~>4.3.0'
-    s.dependency 'cordova-plugin-file-transfer', '~>1.6.0'
-    s.dependency 'cordova-plugin-geolocation', '~>2.4.0'
-    s.dependency 'cordova-plugin-globalization', '~>1.0.4'
-    s.dependency 'cordova-plugin-inappbrowser', '~>1.5.0'
-    s.dependency 'cordova-plugin-network-information', '~>1.3.0'
-    s.dependency 'cordova-plugin-vibration', '~>2.1.2'
-    s.dependency 'cordova-plugin-wkwebview-engine', '~>1.1.0'
+    #  s.dependency 'CordovaPlugin-battery-status'
+#, '~>0.2.10'
+    #  s.dependency 'CordovaPlugin-media'
+#, '~>0.2.4'
+    s.dependency 'cordova-plugin-camera'
+#, '~>2.3.0'
+    s.dependency 'cordova-plugin-contacts'
+#, '~>2.2.0'
+    s.dependency 'cordova-plugin-device'
+#, '~>1.1.3'
+    s.dependency 'cordova-plugin-device-motion'
+#, '~>1.2.2'
+    s.dependency 'cordova-plugin-device-orientation'
+#, '~>1.0.4'
+    s.dependency 'cordova-plugin-dialogs'
+#, '~>1.2.0'
+    s.dependency 'cordova-plugin-file'
+#, '~>4.3.0'
+    s.dependency 'cordova-plugin-file-transfer'
+#, '~>1.6.0'
+    s.dependency 'cordova-plugin-geolocation'
+#, '~>2.4.0'
+    s.dependency 'cordova-plugin-globalization'
+#, '~>1.0.4'
+    s.dependency 'cordova-plugin-inappbrowser'
+#, '~>1.5.0'
+    s.dependency 'cordova-plugin-network-information'
+#, '~>1.3.0'
+    s.dependency 'cordova-plugin-vibration'
+#, '~>2.1.2'
+    s.dependency 'cordova-plugin-wkwebview-engine'
+#, '~>1.1.0'
 
 
 end
