@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTGKCordovaKit'
-  s.version          = '0.4.0'
+  s.version          = '0.4.1'
   s.summary          = 'HTGKCordovaKit is a basic framework for Cordova.'
 
 # This description is used to generate tags and improve search results.
@@ -46,9 +46,8 @@ DESC
 
     s.dependency 'Cordova', '~>4.5.4'
     # cordova 插件
-    s.dependency 'CordovaPlugin-battery-status', '~>0.2.10'
-    #  s.dependency 'CordovaPlugin-media'
-#, '~>0.2.4'
+    # s.dependency 'CordovaPlugin-battery-status', '~>0.2.10'
+    # s.dependency 'CordovaPlugin-media'#, '~>0.2.4'
     s.dependency 'cordova-plugin-camera', '~>2.3.0'
     s.dependency 'cordova-plugin-contacts', '~>2.2.0'
     s.dependency 'cordova-plugin-device', '~>1.1.3'

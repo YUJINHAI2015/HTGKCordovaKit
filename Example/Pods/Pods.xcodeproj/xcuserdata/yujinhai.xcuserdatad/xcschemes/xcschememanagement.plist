@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CordovaPlugin-battery-status.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>HTGKCordovaKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>

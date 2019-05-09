@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9B9F52831560ADB5480043EEDA4928D2"
+               BlueprintIdentifier = "BCEB6B3EC845050C7B28FB8CF1088860"
                BuildableName = "HTGKCordovaKit.framework"
                BlueprintName = "HTGKCordovaKit"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9B9F52831560ADB5480043EEDA4928D2"
+            BlueprintIdentifier = "BCEB6B3EC845050C7B28FB8CF1088860"
             BuildableName = "HTGKCordovaKit.framework"
             BlueprintName = "HTGKCordovaKit"
             ReferencedContainer = "container:Pods.xcodeproj">

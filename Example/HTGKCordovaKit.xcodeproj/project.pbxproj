@@ -305,7 +305,6 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HTGKCordovaKit_Example/Pods-HTGKCordovaKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cordova/Cordova.framework",
-				"${BUILT_PRODUCTS_DIR}/CordovaPlugin-battery-status/CordovaPlugin_battery_status.framework",
 				"${BUILT_PRODUCTS_DIR}/HTGKCordovaKit/HTGKCordovaKit.framework",
 				"${BUILT_PRODUCTS_DIR}/cordova-plugin-camera/cordova_plugin_camera.framework",
 				"${BUILT_PRODUCTS_DIR}/cordova-plugin-contacts/cordova_plugin_contacts.framework",
@@ -327,7 +326,6 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cordova.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CordovaPlugin_battery_status.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTGKCordovaKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cordova_plugin_camera.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cordova_plugin_contacts.framework",

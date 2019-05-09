@@ -154,7 +154,6 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Cordova/Cordova.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/CordovaPlugin-battery-status/CordovaPlugin_battery_status.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HTGKCordovaKit/HTGKCordovaKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-camera/cordova_plugin_camera.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-contacts/cordova_plugin_contacts.framework"
@@ -173,7 +172,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Cordova/Cordova.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/CordovaPlugin-battery-status/CordovaPlugin_battery_status.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/HTGKCordovaKit/HTGKCordovaKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-camera/cordova_plugin_camera.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/cordova-plugin-contacts/cordova_plugin_contacts.framework"

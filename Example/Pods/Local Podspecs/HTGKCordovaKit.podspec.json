@@ -24,9 +24,6 @@
     "Cordova": [
       "~>4.5.4"
     ],
-    "CordovaPlugin-battery-status": [
-      "~>0.2.10"
-    ],
     "cordova-plugin-camera": [
       "~>2.3.0"
     ],
