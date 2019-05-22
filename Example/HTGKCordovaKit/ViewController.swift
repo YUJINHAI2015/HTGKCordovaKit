@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HTGKCordovaKit
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func loadWebViewAction(_ sender: UIButton) {
-        let myWebVC = MyWebViewController.init(configuration: nil)
+        let configure = CordovaConfiguration.init(startPage: "http://masonzone.gitee.io/app-h5/#/mall")
+
+        let myWebVC = MyWebViewController.init(configuration: configure)
         self.navigationController?.pushViewController(myWebVC, animated: true)
     }
     

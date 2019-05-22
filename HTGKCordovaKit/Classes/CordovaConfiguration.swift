@@ -8,14 +8,29 @@
 
 import UIKit
 
-public struct CordovaConfiguration {
+public class CordovaConfiguration: NSObject {
     /// 要加载的文件路径，默认是www
-    var wwwFolderName: String?
+    public var wwwFolderName: String?
     /// www目录下的文件，默认已经加载到www文件。也可以直接加载http开头
-    var startPage: String?
-    var baseUserAgent: String?
+    public var startPage: String?
+    /// 设置userAgent
+    public var baseUserAgent: String?
     /// 加载本地沙盒文件路径
-    var localPath: String?
+    public var localPath: String?
+    
+    public convenience init(wwwFolderName: String? = nil,
+                            startPage: String? = nil,
+                            baseUserAgent: String? = nil,
+                            localPath: String? = nil) {
+        self.init()
+        self.wwwFolderName = wwwFolderName
+        self.startPage = startPage
+        self.baseUserAgent = baseUserAgent
+        self.localPath = localPath
+    }
+    public override init() {
+        
+    }
 
 }
 
