@@ -76,16 +76,20 @@
         <param name="ios-package" value="CDVBattery" />
     </feature>
 
+    
     <!--    框架默认的基础功能  注释结束-->
 
     
     <!--  请添加您需要的功能  注释开始-->
-    
+    <feature name="BigMember_User">
+        <param name="ios-package" value="BigMemberUserClassName" />
+    </feature>
+
     <!--  请添加您需要的功能  注释结束-->
 
     
     <!--    默认打开文件 注释开始-->
-    <content src="index.html" />
+    <content src="indexGetToken.html" />
     <!--    默认打开文件 注释结束-->
     
     <!--    允许在app内打开链接 注释开始-->
@@ -118,6 +122,4 @@
     
     <!-- iOS9.0 及以上使用wkwebView-->
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-    <!-- iOS8.0 及以下使用uiwebView-->
-    <preference name="CordovaDefaultWebViewEngine" value="CDVUIWebViewEngine" />
 </widget>

@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <meta name="_navigation_color" content="#FAEBD7" />
+    <title>cordova 调试</title>
+    <script src="./cordova.js"></script>
+
+    <script>
+        function getToken(){
+
+            alert("start getToken..");
+
+            cordova.exec(function(result){
+                alert(JSON.stringify(result,null,4));
+            },
+            function(error){
+                alert("调用失败");
+            },
+            "BigMember_User",
+            "getToken",[]);
+        }
+
+        function getUserInfo() {
+            cordova.exec(function (result) {
+                alert(JSON.stringify(result, null, 4));
+            },
+                function (error) {
+                    alert("调用失败");
+                },
+                "BigMember_User",
+                "getUserInfo", []);
+        }
+    
+    </script>
+</head>
+
+<body load="getToken()">
+
+<a onclick="getToken()">获取token</a>
+<br>
+<br>
+<a onclick="getUserInfo()">获取用户信息</a>
+<br>
+<br>
+
+
+</body>
+
+</html>

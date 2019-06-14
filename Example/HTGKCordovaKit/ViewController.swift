@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loadWebViewAction(_ sender: UIButton) {
-        let configure = CordovaConfiguration.init(startPage: "http://masonzone.gitee.io/app-h5/#/mall")
+        let configure = CordovaConfiguration.init(startPage: "indexGetToken.html")
 
         let myWebVC = MyWebViewController.init(configuration: configure)
         self.navigationController?.pushViewController(myWebVC, animated: true)

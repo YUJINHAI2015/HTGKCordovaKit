@@ -11,6 +11,8 @@ import WebKit
 
 open class CordovaWebViewController: CordovaBaseWebViewController {
 
+    public weak var delegate: CordovaWebViewControllerDelegate?
+    
     public var wkWebView: WKWebView {
         get {
             return self.webView as! WKWebView
@@ -26,15 +28,15 @@ open class CordovaWebViewController: CordovaBaseWebViewController {
 extension CordovaWebViewController: WKNavigationDelegate {
     /// 加载开始
     public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        // TODO: -
+        self.delegate?.cordovaWebView(webView, didStartProvisionalNavigation: navigation)
     }
     /// 加载完成
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        // TODO: -
+        self.delegate?.cordovaWebView(webView, didFinish: navigation)
     }
     /// 加载失败
     public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        // TODO: -
+        self.delegate?.cordovaWebView(webView, didFail: navigation, withError: error)
     }
 }
 ///// MARK: - 拦截注册事件 -- 暂时没有用到，因为没有注册事件。
