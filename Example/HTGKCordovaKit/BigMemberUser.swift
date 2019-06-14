@@ -14,15 +14,13 @@ import Cordova
     /// 获取token
     @objc(getToken:)
     func getToken(command: CDVInvokedUrlCommand) {
-        
 
     }
     /// 获取会员信息
     @objc(getUserInfo:)
     func getUserInfo(command: CDVInvokedUrlCommand) {
 
-
-        
+        self.viewController.title = "userInfo"
     }
     
 }
