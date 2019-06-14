@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "CDVBattery.h"
 
 FOUNDATION_EXPORT double HTGKCordovaKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char HTGKCordovaKitVersionString[];

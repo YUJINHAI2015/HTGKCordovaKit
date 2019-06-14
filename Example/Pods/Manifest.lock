@@ -29,7 +29,7 @@ PODS:
     - Cordova (>= 4.3.0)
   - cordova-plugin-wkwebview-engine (1.1.0):
     - Cordova (>= 4.3.0)
-  - HTGKCordovaKit (0.4.0):
+  - HTGKCordovaKit (0.6.0):
     - Cordova (~> 4.5.4)
     - cordova-plugin-camera (~> 2.3.0)
     - cordova-plugin-contacts (~> 2.2.0)
@@ -87,8 +87,8 @@ SPEC CHECKSUMS:
   cordova-plugin-network-information: 89f1639b86374336ffac71f45e8913d493e9fc9e
   cordova-plugin-vibration: ba02ccf635f9ac6f394a45aa07cda015c0a1f114
   cordova-plugin-wkwebview-engine: 38ccefc374b68251e8a0675fec57477dfd18da15
-  HTGKCordovaKit: 99f0dc5042aa250601bf19dbc103feb967826e11
+  HTGKCordovaKit: 0a58b6eb1781d29089d86948e1fae41613da9567
 
 PODFILE CHECKSUM: 6ba02113376931b75f73364eafb125b2fc148b40
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.6.2
