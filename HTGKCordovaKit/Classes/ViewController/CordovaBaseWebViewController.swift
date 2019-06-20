@@ -11,6 +11,8 @@ import Cordova
 
 open class CordovaBaseWebViewController: CDVViewController {
     
+    var injectionLocalJS: [[String: Any]]?
+
     convenience public init(configuration: CordovaConfiguration?) {
         self.init(nibName: nil, bundle: nil)
         self.initConfigure(config: configuration)
@@ -36,10 +38,9 @@ open class CordovaBaseWebViewController: CDVViewController {
         if let baseUserAgent = config?.baseUserAgent  {
             self.baseUserAgent = baseUserAgent
         }
-
-        if let _ = config?.localPath {
-            // TODO: -还未实现
+        
+        if let injectionLocalJS = config?.injectionLocalJS {
+            self.injectionLocalJS = injectionLocalJS
         }
     }
-    
 }

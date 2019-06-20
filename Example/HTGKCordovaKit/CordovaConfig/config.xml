@@ -75,6 +75,9 @@
     <feature name="Battery">
         <param name="ios-package" value="CDVBattery" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
 
     
     <!--    框架默认的基础功能  注释结束-->
@@ -83,6 +86,12 @@
     <!--  请添加您需要的功能  注释开始-->
     <feature name="BigMember_User">
         <param name="ios-package" value="BigMemberUserClassName" />
+    </feature>
+    <feature name="BigMember_WebView">
+        <param name="ios-package" value="BigMemberWebViewClassName" />
+    </feature>
+    <feature name="BigMember_Jump">
+        <param name="ios-package" value="BigMemberJumpClassName" />
     </feature>
 
     <!--  请添加您需要的功能  注释结束-->

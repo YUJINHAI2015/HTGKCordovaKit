@@ -4,22 +4,28 @@
     <meta name="viewport" content="width=device-width,user-scalable=no" />
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
     <meta name="_navigation_color" content="#FAEBD7" />
-    <title>cordova 调试</title>
-    <script src="./cordova.js"></script>
+    <title>cordova 碌梅脢脭</title>
+    <!--    鍔犺浇鏈湴鐨刢ordova.js-->
+    <script src="applocal://www/cordova.min.js"></script>
 
     <script>
         function getToken(){
 
+            /*
             alert("start getToken..");
 
             cordova.exec(function(result){
                 alert(JSON.stringify(result,null,4));
             },
             function(error){
-                alert("调用失败");
+                alert("碌梅脫脙脢搂掳脺");
             },
             "BigMember_User",
             "getToken",[]);
+             */
+            
+            window.webkit.messageHandlers.wxlogin.postMessage({"hello":"world"});
+
         }
 
         function getUserInfo() {
@@ -27,7 +33,7 @@
                 alert(JSON.stringify(result, null, 4));
             },
                 function (error) {
-                    alert("调用失败");
+                    alert("碌梅脫脙脢搂掳脺");
                 },
                 "BigMember_User",
                 "getUserInfo", []);
@@ -36,12 +42,12 @@
     </script>
 </head>
 
-<body load="getToken()">
+<body>
 
-<a onclick="getToken()">获取token</a>
+<a onclick="getToken()">禄帽脠隆token</a>
 <br>
 <br>
-<a onclick="getUserInfo()">获取用户信息</a>
+<a onclick="getUserInfo()">禄帽脠隆脫脙禄搂脨脜脧垄</a>
 <br>
 <br>
 

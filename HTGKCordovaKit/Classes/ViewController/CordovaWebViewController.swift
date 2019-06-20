@@ -20,8 +20,28 @@ open class CordovaWebViewController: CordovaBaseWebViewController {
     }
     override open func viewDidLoad() {
         super.viewDidLoad()
-        self.wkWebView.uiDelegate = self
+
         self.wkWebView.navigationDelegate = self
+    }
+}
+// MARK: - private
+extension CordovaWebViewController {
+    func injectionJS(){
+        self.wkWebView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (value, error) in
+            
+            self.injectionLocalJS?.forEach({ (dict) in
+                
+                guard let valueString = value as? String,
+                    valueString.contains(dict.keys.first!) else { // 注意注入顺序，判断是applocal时才注入
+                        return
+                }
+                
+                if let data = self.loadDataFromBundle(name: (dict.values.first as? String) ?? "") {
+                    let cordovaString = String.init(data: data, encoding: .utf8)
+                    self.wkWebView.evaluateJavaScript(cordovaString ?? "", completionHandler: nil)
+                }
+            })
+        }
     }
 }
 /// MARK: - webView加载流程
@@ -32,6 +52,7 @@ extension CordovaWebViewController: WKNavigationDelegate {
     }
     /// 加载完成
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.injectionJS()
         self.delegate?.cordovaWebView(webView, didFinish: navigation)
     }
     /// 加载失败
@@ -39,29 +60,40 @@ extension CordovaWebViewController: WKNavigationDelegate {
         self.delegate?.cordovaWebView(webView, didFail: navigation, withError: error)
     }
 }
-///// MARK: - 拦截注册事件 -- 暂时没有用到，因为没有注册事件。
+///// MARK: - 拦截注册事件 -
 //extension CordovaWebViewController: WKScriptMessageHandler {
-//    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-//        // TODO: -
+//    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
 //    }
-//
-//
 //}
-//
-/// MARK: - WKUIDelegate 拦截提示框 -- 暂时也没有用到
-extension CordovaWebViewController: WKUIDelegate {
 
-    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
-        // TODO: -
-        completionHandler("")
-    }
-    public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        // TODO: -
-        completionHandler()
-    }
-    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
-        // TODO: -
-        completionHandler(true)
+///// MARK: - WKUIDelegate 拦截提示框 -- CDVWKWebViewUIDelegate 已经实现
+//extension CordovaWebViewController: WKUIDelegate {
+//
+//    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+//        // TODO: -
+//        completionHandler("")
+//    }
+//    public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+//        // TODO: -
+//        completionHandler()
+//    }
+//    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+//        // TODO: -
+//        completionHandler(true)
+//    }
+//}
+// MARK: - util
+extension CordovaWebViewController {
+    
+    func loadDataFromBundle(name: String) -> Data? {
+        
+        guard let path = Bundle.main.path(forResource: name, ofType: "") else {
+            return nil
+        }
+        let url = URL.init(fileURLWithPath: path)
+        
+        let data = try? Data.init(contentsOf: url)
+        
+        return data
     }
 }
-

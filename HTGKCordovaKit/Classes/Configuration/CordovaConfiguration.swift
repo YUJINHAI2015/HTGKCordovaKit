@@ -15,18 +15,24 @@ public class CordovaConfiguration: NSObject {
     public var startPage: String?
     /// 设置userAgent
     public var baseUserAgent: String?
-    /// 加载本地沙盒文件路径
-    public var localPath: String?
+    /// 注入本地js文件,
+    /*
+     [
+     [“网页约定”: ["本地文件路径"]],
+     [“applocal://”: ["cordova.js"]]
+     ]
+     */
+    public var injectionLocalJS: [[String: Any]]?
     
     public convenience init(wwwFolderName: String? = nil,
                             startPage: String? = nil,
                             baseUserAgent: String? = nil,
-                            localPath: String? = nil) {
+                            injectionLocalJS: [[String: Any]]? = nil) {
         self.init()
         self.wwwFolderName = wwwFolderName
         self.startPage = startPage
         self.baseUserAgent = baseUserAgent
-        self.localPath = localPath
+        self.injectionLocalJS = injectionLocalJS
     }
     public override init() {
         
