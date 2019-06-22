@@ -50,9 +50,14 @@ extension CordovaWebViewController: WKNavigationDelegate {
     public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         self.delegate?.cordovaWebView(webView, didStartProvisionalNavigation: navigation)
     }
+    /// commit
+    public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        // 在commit里面注入js,可以只加载html文件，而先不执行后面的js。
+        // 如果在didFinish里面注入js的话，会直接执行后面的js
+        self.injectionJS()
+    }
     /// 加载完成
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        self.injectionJS()
         self.delegate?.cordovaWebView(webView, didFinish: navigation)
     }
     /// 加载失败
