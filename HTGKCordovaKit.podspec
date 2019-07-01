@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTGKCordovaKit'
-  s.version          = '0.7.1'
+  s.version          = '0.8.0'
   s.summary          = 'HTGKCordovaKit is a basic framework for Cordova.'
 
 # This description is used to generate tags and improve search results.

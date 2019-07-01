@@ -23,6 +23,12 @@ open class CordovaWebViewController: CordovaBaseWebViewController {
 
         self.wkWebView.navigationDelegate = self
     }
+    open override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        // 加载一个空白页
+        let request = URLRequest.init(url: URL.init(string: "about:blank")!)
+        self.webViewEngine.load(request)
+    }
 }
 // MARK: - private
 extension CordovaWebViewController {
