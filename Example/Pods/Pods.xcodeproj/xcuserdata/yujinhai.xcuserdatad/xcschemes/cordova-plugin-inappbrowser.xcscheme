@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5B94CC7B9A9AB5BDCC9BF2D9B08753B"
+               BlueprintIdentifier = "6C1CB01DADEEC2E0D23184B3DE3CDB82"
                BuildableName = "cordova_plugin_inappbrowser.framework"
                BlueprintName = "cordova-plugin-inappbrowser"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5B94CC7B9A9AB5BDCC9BF2D9B08753B"
+            BlueprintIdentifier = "6C1CB01DADEEC2E0D23184B3DE3CDB82"
             BuildableName = "cordova_plugin_inappbrowser.framework"
             BlueprintName = "cordova-plugin-inappbrowser"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,5 +1,5 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/HTGKCordovaKit
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Cordova" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-camera" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-contacts" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device-motion" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device-orientation" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-dialogs" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-file" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-file-transfer" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-geolocation" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-globalization" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-inappbrowser" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-network-information" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-vibration" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-wkwebview-engine"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Cordova" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-camera" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-contacts" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device-motion" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-device-orientation" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-dialogs" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-file" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-file-transfer" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-geolocation" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-globalization" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-inappbrowser" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-network-information" "${PODS_CONFIGURATION_BUILD_DIR}/cordova-plugin-vibration"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 OTHER_LDFLAGS = $(inherited) -weak_framework "AudioToolbox" -weak_framework "ImageIO"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
@@ -9,3 +9,4 @@ PODS_ROOT = ${SRCROOT}
 PODS_TARGET_SRCROOT = ${PODS_ROOT}/../..
 PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
 SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

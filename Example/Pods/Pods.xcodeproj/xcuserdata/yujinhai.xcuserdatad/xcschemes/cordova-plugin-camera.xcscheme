@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4784F689F0DD755AB3B1FD71128AACD1"
+               BlueprintIdentifier = "E947E0E940F800C60175515D06E5A8B7"
                BuildableName = "cordova_plugin_camera.framework"
                BlueprintName = "cordova-plugin-camera"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4784F689F0DD755AB3B1FD71128AACD1"
+            BlueprintIdentifier = "E947E0E940F800C60175515D06E5A8B7"
             BuildableName = "cordova_plugin_camera.framework"
             BlueprintName = "cordova-plugin-camera"
             ReferencedContainer = "container:Pods.xcodeproj">

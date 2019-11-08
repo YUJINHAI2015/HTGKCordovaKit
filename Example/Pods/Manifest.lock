@@ -27,9 +27,7 @@ PODS:
     - Cordova (>= 4.3.0)
   - cordova-plugin-vibration (2.1.2):
     - Cordova (>= 4.3.0)
-  - cordova-plugin-wkwebview-engine (1.1.0):
-    - Cordova (>= 4.3.0)
-  - HTGKCordovaKit (0.6.0):
+  - HTGKCordovaKit (0.8.0):
     - Cordova (~> 4.5.4)
     - cordova-plugin-camera (~> 2.3.0)
     - cordova-plugin-contacts (~> 2.2.0)
@@ -44,13 +42,12 @@ PODS:
     - cordova-plugin-inappbrowser (~> 1.5.0)
     - cordova-plugin-network-information (~> 1.3.0)
     - cordova-plugin-vibration (~> 2.1.2)
-    - cordova-plugin-wkwebview-engine (~> 1.1.0)
 
 DEPENDENCIES:
   - HTGKCordovaKit (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Cordova
     - cordova-plugin-camera
     - cordova-plugin-contacts
@@ -65,7 +62,6 @@ SPEC REPOS:
     - cordova-plugin-inappbrowser
     - cordova-plugin-network-information
     - cordova-plugin-vibration
-    - cordova-plugin-wkwebview-engine
 
 EXTERNAL SOURCES:
   HTGKCordovaKit:
@@ -86,9 +82,8 @@ SPEC CHECKSUMS:
   cordova-plugin-inappbrowser: 524780743ddeaa363d9f70b5e4700d55efde3dd4
   cordova-plugin-network-information: 89f1639b86374336ffac71f45e8913d493e9fc9e
   cordova-plugin-vibration: ba02ccf635f9ac6f394a45aa07cda015c0a1f114
-  cordova-plugin-wkwebview-engine: 38ccefc374b68251e8a0675fec57477dfd18da15
-  HTGKCordovaKit: 0a58b6eb1781d29089d86948e1fae41613da9567
+  HTGKCordovaKit: 5044c8292b058f4e704186c242f5d5c72a598f69
 
 PODFILE CHECKSUM: 6ba02113376931b75f73364eafb125b2fc148b40
 
-COCOAPODS: 1.6.2
+COCOAPODS: 1.8.4

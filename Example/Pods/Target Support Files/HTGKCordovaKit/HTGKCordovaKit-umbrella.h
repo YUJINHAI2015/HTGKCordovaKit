@@ -11,6 +11,9 @@
 #endif
 
 #import "CDVBattery.h"
+#import "CDVWKProcessPoolFactory.h"
+#import "CDVWKWebViewEngine.h"
+#import "CDVWKWebViewUIDelegate.h"
 
 FOUNDATION_EXPORT double HTGKCordovaKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char HTGKCordovaKitVersionString[];

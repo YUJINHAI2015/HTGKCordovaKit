@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "590226931C965B0164E675C6660D8F01"
+               BlueprintIdentifier = "3371D4C85B3799B380BF2FC042807BD3"
                BuildableName = "cordova_plugin_vibration.framework"
                BlueprintName = "cordova-plugin-vibration"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "590226931C965B0164E675C6660D8F01"
+            BlueprintIdentifier = "3371D4C85B3799B380BF2FC042807BD3"
             BuildableName = "cordova_plugin_vibration.framework"
             BlueprintName = "cordova-plugin-vibration"
             ReferencedContainer = "container:Pods.xcodeproj">

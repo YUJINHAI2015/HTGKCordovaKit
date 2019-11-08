@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F298FCE0DA445BCA78C6E758FCEB5E2B"
+               BlueprintIdentifier = "2D4BD106DFFA3F977FA81CADB7B29B92"
                BuildableName = "Cordova.framework"
                BlueprintName = "Cordova"
                ReferencedContainer = "container:Pods.xcodeproj">

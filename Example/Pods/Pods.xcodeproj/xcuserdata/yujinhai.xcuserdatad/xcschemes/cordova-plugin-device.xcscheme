@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C6FBAC31FFE1E9F8925D780431B9C9B"
+               BlueprintIdentifier = "9A1776464E1CC7FBA7579CE3AC6DA7D5"
                BuildableName = "cordova_plugin_device.framework"
                BlueprintName = "cordova-plugin-device"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5C6FBAC31FFE1E9F8925D780431B9C9B"
+            BlueprintIdentifier = "9A1776464E1CC7FBA7579CE3AC6DA7D5"
             BuildableName = "cordova_plugin_device.framework"
             BlueprintName = "cordova-plugin-device"
             ReferencedContainer = "container:Pods.xcodeproj">

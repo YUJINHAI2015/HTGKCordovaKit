@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "63675FAE0F4197E16C7766B96AD89A6E"
+               BlueprintIdentifier = "66100F86FE00068D7C78BB345DC16735"
                BuildableName = "cordova_plugin_network_information.framework"
                BlueprintName = "cordova-plugin-network-information"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "63675FAE0F4197E16C7766B96AD89A6E"
+            BlueprintIdentifier = "66100F86FE00068D7C78BB345DC16735"
             BuildableName = "cordova_plugin_network_information.framework"
             BlueprintName = "cordova-plugin-network-information"
             ReferencedContainer = "container:Pods.xcodeproj">

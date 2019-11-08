@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6A0B064A732DE9933EDC4AF0B617A28"
+               BlueprintIdentifier = "BAA633F8CE8700E405D9FAB1FD2E3CAD"
                BuildableName = "cordova_plugin_geolocation.framework"
                BlueprintName = "cordova-plugin-geolocation"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6A0B064A732DE9933EDC4AF0B617A28"
+            BlueprintIdentifier = "BAA633F8CE8700E405D9FAB1FD2E3CAD"
             BuildableName = "cordova_plugin_geolocation.framework"
             BlueprintName = "cordova-plugin-geolocation"
             ReferencedContainer = "container:Pods.xcodeproj">

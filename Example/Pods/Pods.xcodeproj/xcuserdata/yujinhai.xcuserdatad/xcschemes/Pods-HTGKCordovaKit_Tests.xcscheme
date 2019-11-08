@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D2959F17D85DA8532C98B7256D1C7ACF"
+               BlueprintIdentifier = "0E47843C4CB3FA0C228D0C221184C69F"
                BuildableName = "Pods_HTGKCordovaKit_Tests.framework"
                BlueprintName = "Pods-HTGKCordovaKit_Tests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D2959F17D85DA8532C98B7256D1C7ACF"
+            BlueprintIdentifier = "0E47843C4CB3FA0C228D0C221184C69F"
             BuildableName = "Pods_HTGKCordovaKit_Tests.framework"
             BlueprintName = "Pods-HTGKCordovaKit_Tests"
             ReferencedContainer = "container:Pods.xcodeproj">

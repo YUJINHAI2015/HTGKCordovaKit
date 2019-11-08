@@ -61,7 +61,7 @@ DESC
     s.dependency 'cordova-plugin-inappbrowser', '~>1.5.0'
     s.dependency 'cordova-plugin-network-information', '~>1.3.0'
     s.dependency 'cordova-plugin-vibration', '~>2.1.2'
-    s.dependency 'cordova-plugin-wkwebview-engine', '~>1.1.0'
+    #s.dependency 'cordova-plugin-wkwebview-engine'
 
 
 end

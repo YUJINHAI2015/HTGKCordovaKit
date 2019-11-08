@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "140DCFBB397400674736783DF1DF9A37"
+               BlueprintIdentifier = "E4E4098CF86E2DA60FF97EF6D4B69DA1"
                BuildableName = "cordova_plugin_device_orientation.framework"
                BlueprintName = "cordova-plugin-device-orientation"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "140DCFBB397400674736783DF1DF9A37"
+            BlueprintIdentifier = "E4E4098CF86E2DA60FF97EF6D4B69DA1"
             BuildableName = "cordova_plugin_device_orientation.framework"
             BlueprintName = "cordova-plugin-device-orientation"
             ReferencedContainer = "container:Pods.xcodeproj">
