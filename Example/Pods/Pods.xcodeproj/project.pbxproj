@@ -42,8 +42,6 @@
 		24C3F3302375192D00F28136 /* CDVWKWebViewUIDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C3F3282375192C00F28136 /* CDVWKWebViewUIDelegate.h */; };
 		24C3F3312375192D00F28136 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3F3292375192C00F28136 /* CDVWKWebViewEngine.m */; };
 		24C3F3322375192D00F28136 /* CDVWKProcessPoolFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C3F32A2375192C00F28136 /* CDVWKProcessPoolFactory.h */; };
-		24C3F3332375192D00F28136 /* RELEASENOTES.md in Resources */ = {isa = PBXBuildFile; fileRef = 24C3F32B2375192C00F28136 /* RELEASENOTES.md */; };
-		24C3F3342375192D00F28136 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 24C3F32C2375192C00F28136 /* README.md */; };
 		24C3F3352375192D00F28136 /* CDVWKWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3F32D2375192C00F28136 /* CDVWKWebViewUIDelegate.m */; };
 		24C3F3362375192D00F28136 /* CDVWKWebViewEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 24C3F32E2375192C00F28136 /* CDVWKWebViewEngine.h */; };
 		24C3F3372375192D00F28136 /* CDVWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C3F32F2375192C00F28136 /* CDVWKProcessPoolFactory.m */; };
@@ -555,8 +553,6 @@
 		24C3F3282375192C00F28136 /* CDVWKWebViewUIDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVWKWebViewUIDelegate.h; sourceTree = "<group>"; };
 		24C3F3292375192C00F28136 /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVWKWebViewEngine.m; sourceTree = "<group>"; };
 		24C3F32A2375192C00F28136 /* CDVWKProcessPoolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVWKProcessPoolFactory.h; sourceTree = "<group>"; };
-		24C3F32B2375192C00F28136 /* RELEASENOTES.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RELEASENOTES.md; sourceTree = "<group>"; };
-		24C3F32C2375192C00F28136 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		24C3F32D2375192C00F28136 /* CDVWKWebViewUIDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVWKWebViewUIDelegate.m; sourceTree = "<group>"; };
 		24C3F32E2375192C00F28136 /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVWKWebViewEngine.h; sourceTree = "<group>"; };
 		24C3F32F2375192C00F28136 /* CDVWKProcessPoolFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVWKProcessPoolFactory.m; sourceTree = "<group>"; };
@@ -1056,8 +1052,6 @@
 				24C3F3292375192C00F28136 /* CDVWKWebViewEngine.m */,
 				24C3F3282375192C00F28136 /* CDVWKWebViewUIDelegate.h */,
 				24C3F32D2375192C00F28136 /* CDVWKWebViewUIDelegate.m */,
-				24C3F32C2375192C00F28136 /* README.md */,
-				24C3F32B2375192C00F28136 /* RELEASENOTES.md */,
 			);
 			path = "cordova-plugin-wkwebview-engine";
 			sourceTree = "<group>";
@@ -2279,8 +2273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C3F3342375192D00F28136 /* README.md in Resources */,
-				24C3F3332375192D00F28136 /* RELEASENOTES.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
