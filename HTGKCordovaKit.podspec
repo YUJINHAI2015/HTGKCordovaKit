@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTGKCordovaKit'
-  s.version          = '0.8.0'
+  s.version          = '0.9.0'
   s.summary          = 'HTGKCordovaKit is a basic framework for Cordova.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ DESC
   s.homepage         = 'https://github.com/YUJINHAI2015/HTGKCordovaKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'YUJINHAI2015' => '15088132368@163.com' }
+  s.author           = { 'YUJINHAI2015' => 'yujinhai2019@163.com' }
   s.source           = { :git => 'https://github.com/YUJINHAI2015/HTGKCordovaKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
