@@ -27,7 +27,7 @@ PODS:
     - Cordova (>= 4.3.0)
   - cordova-plugin-vibration (2.1.2):
     - Cordova (>= 4.3.0)
-  - HTGKCordovaKit (0.9.0):
+  - HTGKCordovaKit (0.9.2):
     - Cordova (~> 4.5.4)
     - cordova-plugin-camera (~> 2.3.0)
     - cordova-plugin-contacts (~> 2.2.0)
@@ -82,7 +82,7 @@ SPEC CHECKSUMS:
   cordova-plugin-inappbrowser: 524780743ddeaa363d9f70b5e4700d55efde3dd4
   cordova-plugin-network-information: 89f1639b86374336ffac71f45e8913d493e9fc9e
   cordova-plugin-vibration: ba02ccf635f9ac6f394a45aa07cda015c0a1f114
-  HTGKCordovaKit: e5fff714833bfd316b991f47f375093f6d0023a2
+  HTGKCordovaKit: 63372022317cf6d2a098fce290fb82fea4a53e22
 
 PODFILE CHECKSUM: 6ba02113376931b75f73364eafb125b2fc148b40
 
