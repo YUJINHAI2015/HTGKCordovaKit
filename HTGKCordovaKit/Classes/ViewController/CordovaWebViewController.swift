@@ -22,16 +22,16 @@ open class CordovaWebViewController: CordovaBaseWebViewController {
         super.viewDidLoad()
 
         self.wkWebView.navigationDelegate = self
+        self.wkWebView.uiDelegate = self
     }
     open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        // 加载一个空白页
-        let request = URLRequest.init(url: URL.init(string: "about:blank")!)
-        self.webViewEngine.load(request)
+        self.loadBlank()
     }
 }
 // MARK: - private
 extension CordovaWebViewController {
+    // 注入js
     func injectionJS(){
         self.wkWebView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (value, error) in
             
@@ -48,6 +48,12 @@ extension CordovaWebViewController {
                 }
             })
         }
+    }
+    // 加载一个空白页
+    func loadBlank() {
+        
+        let request = URLRequest.init(url: URL.init(string: "about:blank")!)
+        self.webViewEngine.load(request)
     }
 }
 /// MARK: - webView加载流程
@@ -70,6 +76,10 @@ extension CordovaWebViewController: WKNavigationDelegate {
     public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         self.delegate?.cordovaWebView(webView, didFail: navigation, withError: error)
     }
+    
+    public func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        self.delegate?.cordovaWebView(webView, decidePolicyFor: navigationAction, decisionHandler: decisionHandler)
+    }
 }
 ///// MARK: - 拦截注册事件 -
 //extension CordovaWebViewController: WKScriptMessageHandler {
@@ -77,22 +87,32 @@ extension CordovaWebViewController: WKNavigationDelegate {
 //    }
 //}
 
-///// MARK: - WKUIDelegate 拦截提示框 -- CDVWKWebViewUIDelegate 已经实现
-//extension CordovaWebViewController: WKUIDelegate {
-//
-//    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
-//        // TODO: -
-//        completionHandler("")
-//    }
-//    public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-//        // TODO: -
-//        completionHandler()
-//    }
-//    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
-//        // TODO: -
-//        completionHandler(true)
-//    }
-//}
+/// MARK: - WKUIDelegate 拦截提示框 -- CDVWKWebViewUIDelegate 已经实现
+extension CordovaWebViewController: WKUIDelegate {
+    
+    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+        // TODO: -
+        completionHandler("")
+    }
+    public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+        // TODO: -
+        completionHandler()
+    }
+    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+        // TODO: -
+        completionHandler(true)
+    }
+    // 处理打开新的页面 target="_blank"
+    public func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if let isMainFrame = navigationAction.targetFrame?.isMainFrame,
+            isMainFrame == true {
+        } else {
+            
+            wkWebView.load(navigationAction.request)
+        }
+        return nil
+    }
+}
 // MARK: - util
 extension CordovaWebViewController {
     

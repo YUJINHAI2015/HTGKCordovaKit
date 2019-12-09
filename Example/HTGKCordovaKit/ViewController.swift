@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func loadWebViewAction(_ sender: UIButton) {
-        let configure = CordovaConfiguration.init(startPage: "indexGetToken.html", injectionLocalJS: [["applocal://": "cordova.js"], ["hello://": "hello.js"]])
+        let configure = CordovaConfiguration.init(startPage: "http://www.yuwenyanxue.com/spots/show_3.html", injectionLocalJS: [["applocal://": "cordova.js"], ["hello://": "hello.js"]])
 
         let myWebVC = MyWebViewController.init(configuration: configure)
         self.navigationController?.pushViewController(myWebVC, animated: true)

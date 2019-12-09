@@ -20,6 +20,10 @@ class MyWebViewController: CordovaWebViewController {
 }
 
 extension MyWebViewController: CordovaWebViewControllerDelegate {
+    func cordovaWebView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        decisionHandler(.allow)
+    }
+    
     func cordovaWebView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
     
     }
