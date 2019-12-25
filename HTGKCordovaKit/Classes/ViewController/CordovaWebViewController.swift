@@ -90,18 +90,18 @@ extension CordovaWebViewController: WKNavigationDelegate {
 /// MARK: - WKUIDelegate 拦截提示框 -- CDVWKWebViewUIDelegate 已经实现
 extension CordovaWebViewController: WKUIDelegate {
     
-    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
-        // TODO: -
-        completionHandler("")
-    }
-    public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        // TODO: -
-        completionHandler()
-    }
-    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
-        // TODO: -
-        completionHandler(true)
-    }
+//    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+//        // TODO: -
+//        completionHandler("")
+//    }
+//    public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+//        // TODO: -
+//        completionHandler()
+//    }
+//    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+//        // TODO: -
+//        completionHandler(true)
+//    }
     // 处理打开新的页面 target="_blank"
     public func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if let isMainFrame = navigationAction.targetFrame?.isMainFrame,
