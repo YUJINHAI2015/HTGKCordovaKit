@@ -12,16 +12,21 @@ import HTGKCordovaKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        self.view.backgroundColor = .white
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        self.myWebVC()
+    }
     
-    @IBAction func loadWebViewAction(_ sender: UIButton) {
-        let configure = CordovaConfiguration.init(startPage: "http://www.yuwenyanxue.com/spots/show_3.html", injectionLocalJS: [["applocal://": "cordova.js"], ["hello://": "hello.js"]])
-
-        let myWebVC = MyWebViewController.init(configuration: configure)
+    func myWebVC() {
+        
+        let myWebVC = MyWebViewController.init(injectionLocalJS: [["applocal://": "cordova.js"],["hello://": "hello.js"]])
+        myWebVC.startPage = "https://www.baidu.com"
         self.navigationController?.pushViewController(myWebVC, animated: true)
-    }
-    
-}
+        
 
+    }
+}

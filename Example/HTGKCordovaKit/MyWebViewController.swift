@@ -11,42 +11,31 @@ import HTGKCordovaKit
 import WebKit
 
 class MyWebViewController: CordovaWebViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.delegate = self
+                
+        self.wkWebView.uiDelegate = self
     }
 }
 
-extension MyWebViewController: CordovaWebViewControllerDelegate {
-    func cordovaWebView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
-        
+extension MyWebViewController: WKUIDelegate {
+    
+    public func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
     }
-    
-    func cordovaWebView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        
+    public func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
     }
-    
-    func cordovaWebView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
-        
+    public func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
     }
-    
-    func cordovaWebView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        decisionHandler(.allow)
-    }
-    
-    func cordovaWebView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-    
-    }
-    
-    func cordovaWebView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        webView.evaluateJavaScript("document.title") { (value, error) in
-            self.title = value as? String ?? ""
+    // 处理打开新的页面 target="_blank"
+    public func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if let isMainFrame = navigationAction.targetFrame?.isMainFrame,
+            isMainFrame == true {
+        } else {
+            
+            wkWebView.load(navigationAction.request)
         }
-    }
-    
-    func cordovaWebView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        
+        return nil
     }
 }

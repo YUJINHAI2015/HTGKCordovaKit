@@ -98,7 +98,7 @@
 
     
     <!--    默认打开文件 注释开始-->
-    <content src="indexGetToken.html" />
+<!--    <content src="indexGetToken.html" />-->
     <!--    默认打开文件 注释结束-->
     
     <!--    允许在app内打开链接 注释开始-->
