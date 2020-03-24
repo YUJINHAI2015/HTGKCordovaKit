@@ -11,6 +11,7 @@
 		242EBC4322BB5DBF00FF701B /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 242EBC4122BB5DBF00FF701B /* config.xml */; };
 		242EBC4522BB5EBB00FF701B /* www in Resources */ = {isa = PBXBuildFile; fileRef = 242EBC4422BB5EBB00FF701B /* www */; };
 		249638C22429013000E76038 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249638C12429013000E76038 /* SecondViewController.swift */; };
+		249B4C4C2429B3B700135A0C /* cordova.js in Resources */ = {isa = PBXBuildFile; fileRef = 249B4C4B2429B3B700135A0C /* cordova.js */; };
 		24D16CC022B3D6F3007C26FB /* BigMemberUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D16CBF22B3D6F3007C26FB /* BigMemberUser.swift */; };
 		56A0066F8B23A1097CEE33A9 /* Pods_HTGKCordovaKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634188AA22B8CFB79AD515A /* Pods_HTGKCordovaKit_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 		242EBC4122BB5DBF00FF701B /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		242EBC4422BB5EBB00FF701B /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		249638C12429013000E76038 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		249B4C4B2429B3B700135A0C /* cordova.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = cordova.js; sourceTree = "<group>"; };
 		24D16CBF22B3D6F3007C26FB /* BigMemberUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigMemberUser.swift; sourceTree = "<group>"; };
 		2FFFC5E4813B52786E8A9A34 /* Pods-HTGKCordovaKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTGKCordovaKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-HTGKCordovaKit_Example/Pods-HTGKCordovaKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5277E9A00BE4B0863141C144 /* HTGKCordovaKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HTGKCordovaKit.podspec; path = ../HTGKCordovaKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -61,6 +63,7 @@
 			children = (
 				242EBC4422BB5EBB00FF701B /* www */,
 				24D16CBF22B3D6F3007C26FB /* BigMemberUser.swift */,
+				249B4C4B2429B3B700135A0C /* cordova.js */,
 				242EBC4122BB5DBF00FF701B /* config.xml */,
 			);
 			path = CordovaConfig;
@@ -225,6 +228,7 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				242EBC4322BB5DBF00FF701B /* config.xml in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				249B4C4C2429B3B700135A0C /* cordova.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
