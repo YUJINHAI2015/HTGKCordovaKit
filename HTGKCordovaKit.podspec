@@ -44,7 +44,7 @@ DESC
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
-    s.dependency 'Cordova', '~>4.5.4'
+    s.dependency 'Cordova', '~>5.1.1'
     # cordova 插件
     # s.dependency 'CordovaPlugin-battery-status', '~>0.2.10'
     # s.dependency 'CordovaPlugin-media'#, '~>0.2.4'
@@ -58,7 +58,7 @@ DESC
     s.dependency 'cordova-plugin-file-transfer', '~>1.6.0'
     s.dependency 'cordova-plugin-geolocation', '~>2.4.0'
     s.dependency 'cordova-plugin-globalization', '~>1.0.4'
-    s.dependency 'cordova-plugin-inappbrowser', '~>1.5.0'
+#    s.dependency 'cordova-plugin-inappbrowser', '~>1.5.0'
     s.dependency 'cordova-plugin-network-information', '~>1.3.0'
     s.dependency 'cordova-plugin-vibration', '~>2.1.2'
     #s.dependency 'cordova-plugin-wkwebview-engine'

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "Cordova.h"
 #import "CDV.h"
 #import "CDVAppDelegate.h"
 #import "CDVAvailability.h"

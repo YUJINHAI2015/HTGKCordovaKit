@@ -78,6 +78,9 @@
     <feature name="NetworkStatus">
         <param name="ios-package" value="CDVConnection" />
     </feature>
+    <feature name="CDVWKWebViewEngine">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
+    </feature>
 
     
     <!--    框架默认的基础功能  注释结束-->
@@ -128,7 +131,8 @@
     <preference name="PageLength" value="0" />
     <preference name="PaginationBreakingMode" value="page" />
     <preference name="PaginationMode" value="unpaginated" />
-    
+    <preference name="WKWebViewOnly" value="true" />
+
     <!-- iOS9.0 及以上使用wkwebView-->
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
 </widget>

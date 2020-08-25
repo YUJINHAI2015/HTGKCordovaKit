@@ -17,11 +17,11 @@
  under the License.
  */
 
-#import <Cordova/CDVPlugin.h>
+#import <Cordova/CDVScreenOrientationDelegate.h>
 
-@interface CDVHandleOpenURL : CDVPlugin
 
-@property (nonatomic, strong) NSURL* url;
-@property (nonatomic, assign) BOOL pageLoaded;
+@interface CDVInAppBrowserNavigationController : UINavigationController
+
+@property (nonatomic, weak) id <CDVScreenOrientationDelegate> orientationDelegate;
 
 @end

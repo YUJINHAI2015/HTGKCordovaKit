@@ -11,6 +11,7 @@
 #endif
 
 #import "CDVBattery.h"
+#import "CDVWKProcessPoolFactory.h"
 #import "CDVWKWebViewEngine.h"
 #import "CDVWKWebViewUIDelegate.h"
 
