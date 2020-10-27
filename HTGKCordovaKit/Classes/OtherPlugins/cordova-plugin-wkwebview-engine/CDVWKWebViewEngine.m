@@ -113,10 +113,10 @@
     } else {
         wkWebView.navigationDelegate = (id <WKNavigationDelegate>)self;
     }
-
-    if ([self.viewController conformsToProtocol:@protocol(WKScriptMessageHandler)]) {
-        [wkWebView.configuration.userContentController addScriptMessageHandler:(id < WKScriptMessageHandler >)self.viewController name:CDV_BRIDGE_NAME];
-    }
+    // by-->yujinhai  客户端实现了WKScriptMessageHandler协议，先注销这个
+//    if ([self.viewController conformsToProtocol:@protocol(WKScriptMessageHandler)]) {
+//        [wkWebView.configuration.userContentController addScriptMessageHandler:(id < WKScriptMessageHandler >)self.viewController name:CDV_BRIDGE_NAME];
+//    }
 
     [self updateSettings:settings];
 
